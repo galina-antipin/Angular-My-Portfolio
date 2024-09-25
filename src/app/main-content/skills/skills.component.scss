@@ -14,11 +14,16 @@ section {
 
         &:hover {
             transform: scale(1.2);
-    }}
+        }
+    }
 
     span {
         color: white;
     }
+}
+
+.skills-wrapper {
+    display: flex;
 }
 
 .left-content {
@@ -28,4 +33,20 @@ section {
     max-width: 60%;
 }
 
+.right-line {
+    width: clamp(30px, 8.9473684211px + 6.5789473684vw, 110px);
+    background-color: #9747FF;
+    height: 4px;
+}
 
+.right-content {
+    display: flex;
+    align-items: center;
+    width: 40%;
+
+    h1 {
+        color: white;
+        font-size: clamp(2rem, 1.375rem + 3.125vw, 4.375rem);
+        font-weight: 900;
+    }
+}
