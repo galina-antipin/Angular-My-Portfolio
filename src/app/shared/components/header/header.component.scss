@@ -47,6 +47,7 @@ nav {
         height: auto;
         margin-left: 10px;
         transition: transform 0.3s;
+        cursor: pointer;
 
         &:hover {
             transform: scale(1.2);
