@@ -64,12 +64,6 @@ section {
     align-items: center;
 }
 
-.left-line {
-    width: clamp(30px, 8.9473684211px + 6.5789473684vw, 110px);
-    background-color: #9747FF;
-    height: 4px;
-}
-
 .left-line-container {
     display: flex;
     align-items: center;

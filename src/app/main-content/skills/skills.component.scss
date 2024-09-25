@@ -43,10 +43,4 @@ section {
     display: flex;
     align-items: center;
     width: 40%;
-
-    h1 {
-        color: white;
-        font-size: clamp(2rem, 1.375rem + 3.125vw, 4.375rem);
-        font-weight: 900;
-    }
 }
