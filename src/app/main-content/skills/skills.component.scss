@@ -7,7 +7,7 @@ section {
     justify-content: center;
 
     img {
-        height: 60px;
+        height: 100px;
         width: auto;
         margin-left: 5%;
         transition: transform 0.3s;
@@ -24,6 +24,9 @@ section {
 
 .skills-wrapper {
     display: flex;
+    margin-bottom: 100px;
+    align-items: flex-start;
+    margin-left: 8%;
 }
 
 .left-content {
@@ -34,13 +37,23 @@ section {
 }
 
 .right-line {
-    width: clamp(30px, 8.9473684211px + 6.5789473684vw, 110px);
+    width: 8%;
     background-color: #9747FF;
     height: 4px;
+    margin-top: 50px;
 }
 
 .right-content {
     display: flex;
     align-items: center;
     width: 40%;
+}
+
+.my-skills-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap:15px;
+    width: 100%;
+    margin-right: 2%;
 }

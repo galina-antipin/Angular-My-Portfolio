@@ -1,8 +1,3 @@
-h1 {
-    color: white;
-    margin: 0;
-}
-
 header {
     width: 100%;
     display: flex;
@@ -31,14 +26,31 @@ nav {
     align-items: center;
 
     a {
+        position: relative;
         color: white;
         text-decoration: none;
         margin: 15px;
         transition: color 0.3s;
         font-size: 23px;
 
+        &::after {
+            content: ""; 
+            position: absolute;
+            left: 50%; 
+            bottom: -5px; 
+            width: 0; 
+            height: 2px; 
+            background-color:  #9747FF;
+            transition: width 0.4s ease, left 0.4s ease; 
+        }
+
         &:hover {
-            color: #70E61C;
+            color: #70E61C; 
+
+            &::after {
+                width: 100%;
+                left: 0; 
+            }
         }
     }
 
