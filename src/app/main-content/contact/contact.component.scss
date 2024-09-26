@@ -1,5 +1,56 @@
 section {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
 }
-span {color: white;}
+
+span {
+    color: red;
+}
+
+.contact-wrapper {
+    display: flex;
+}
+
+.left-content {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+input, textarea {
+    border: 1px solid #9747FF;
+    border-radius: 10px; 
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+
+    &:hover {
+        border-color: #70E61C; 
+    }
+
+    :focus, input:-webkit-autofill:focus {
+        border-color: red;
+        background-image: url('./../../../assets/img/warning-icon.png'); 
+        background-repeat: no-repeat; 
+        background-position: right 10px center;
+        background-size: 16px; 
+    }
+
+    &:valid {
+        border-color: #70E61C; 
+        background-image: url('../../../assets/img/check-icon.png');
+        background-position: right 10px center; 
+        background-repeat: no-repeat;
+        
+    }
+}
+
+textarea {
+    height: 100px; 
+}
