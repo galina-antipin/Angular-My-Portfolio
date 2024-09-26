@@ -3,10 +3,36 @@ section {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    max-width: 1920px;
+
+    img {
+        height: 39px;
+        width: 39px;
+        display: flex;
+
+    }
+}
+
+.go-back-arrow {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 8%;
+    margin-top: 8%;
+    cursor: pointer;
+
+    &:hover svg path {
+        fill: #70e61c;
+    }
 }
 
 span {
     color: red;
+}
+
+p {
+    color: white;
+    font-weight:400 ;
+    font-size: 16px;
 }
 
 .contact-wrapper {
@@ -20,6 +46,7 @@ span {
 
 .left-content {
     width: 50%;
+    margin-left: 8%;
 }
 
 form {

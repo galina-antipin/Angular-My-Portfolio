@@ -3,38 +3,31 @@
         <div class="left-line"></div>
         <h1>Contact</h1>
     </div>
-
     <div class="contact-wrapper">
         <div class="left-content">
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo amet qui consequuntur labore debitis
-                quidem incidunt reiciendis, facere reprehenderit deleniti, ea ipsam assumenda impedit dolorem recusandae
-                ullam,
-                doloribus hic voluptas!</span>
+            <p>If you have any questions, want to share some thoughts, or want to team up
+                on a project - feel free to <b>drop me a message!</b></p>
         </div>
-
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
             <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text" id="name"
                 placeholder="Your name" required [ngClass]="{'invalid': !name.valid && name.touched}">
             @if (!name.valid && name.touched) {
             <span>Please enter your name</span>
             }
-
             <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="email" placeholder="Your email"
                 required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
                 [ngClass]="{'invalid': !email.valid && email.touched}">
             @if (!email.valid && email.touched) {
             <span>Please enter a valid email</span>
             }
-
             <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message"
                 placeholder="Your message" required
                 [ngClass]="{'invalid': !message.valid && message.touched}"></textarea>
             @if (!message.valid && message.touched) {
             <span>Please enter a message</span>
             }
-
             <button type="submit">Send message :)</button>
         </form>
     </div>
-
+    <div class="go-back-arrow"> <a href="#header"> <img src="./../../../assets/img/arrow-top-icon.svg" alt="Arrow top"> </a></div>
 </section>
