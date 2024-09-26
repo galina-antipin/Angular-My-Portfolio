@@ -1,6 +1,8 @@
 <section>
-    <div class="left-line"></div>
-    <h1>Contact</h1>
+    <div class="contact-headline">
+        <div class="left-line"></div>
+        <h1>Contact</h1>
+    </div>
 
     <div class="contact-wrapper">
         <div class="left-content">
@@ -18,13 +20,15 @@
             }
 
             <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="email" placeholder="Your email"
-                required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"  [ngClass]="{'invalid': !email.valid && email.touched}">
+                required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                [ngClass]="{'invalid': !email.valid && email.touched}">
             @if (!email.valid && email.touched) {
             <span>Please enter a valid email</span>
             }
 
             <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message"
-                placeholder="Your message" required [ngClass]="{'invalid': !message.valid && message.touched}"></textarea>
+                placeholder="Your message" required
+                [ngClass]="{'invalid': !message.valid && message.touched}"></textarea>
             @if (!message.valid && message.touched) {
             <span>Please enter a message</span>
             }
