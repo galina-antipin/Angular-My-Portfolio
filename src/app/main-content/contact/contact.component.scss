@@ -21,6 +21,8 @@ form {
     display: flex;
     flex-direction: column;
     width: 50%;
+    margin-left: 10%;
+    margin-right: 8%;
 }
 
 input, textarea {
@@ -34,7 +36,7 @@ input, textarea {
         border-color: #70E61C; 
     }
 
-    :focus, input:-webkit-autofill:focus {
+    :focus {
         border-color: red;
         background-image: url('./../../../assets/img/warning-icon.png'); 
         background-repeat: no-repeat; 
@@ -46,8 +48,14 @@ input, textarea {
         border-color: #70E61C; 
         background-image: url('../../../assets/img/check-icon.png');
         background-position: right 10px center; 
+        background-repeat: no-repeat; 
+    }
+
+    &.invalid {
+        border-color: red;
+        background-image: url('./../../../assets/img/warning-icon.png'); 
+        background-position: right 10px center; 
         background-repeat: no-repeat;
-        
     }
 }
 
