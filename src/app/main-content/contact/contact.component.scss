@@ -36,7 +36,7 @@ input, textarea {
         border-color: #70E61C; 
     }
 
-    :focus {
+    &:focus {
         border-color: red;
         background-image: url('./../../../assets/img/warning-icon.png'); 
         background-repeat: no-repeat; 
