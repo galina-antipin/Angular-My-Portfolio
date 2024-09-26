@@ -13,6 +13,7 @@ section {
     display: flex;
     margin-left: 8%;
     margin-right: 8%;
+    width: 84%;
 }
 
 .left-content {
@@ -35,13 +36,14 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+
     text-align: center;
     font-size: clamp(2.6rem, .6343430034rem + 3.3105802048vw, 3.8125rem);
-    margin-right: 3%;
 
     span {
-        transform: rotate(-90deg);
+        transform: rotate(-90deg);    
+        color: white;
+        white-space: nowrap;
     }
 }
 
@@ -50,12 +52,14 @@ section {
     font-weight: 700;
     color: white;
     width: 100%;
+    white-space: nowrap;
 }
 
 .front-end {
     font-size: clamp(2rem, .1761945392rem + 3.0716723549vw, 3.125rem);
     color: #9747FF;
     width: 100%;
+    white-space: nowrap;
 }
 
 .text-content {

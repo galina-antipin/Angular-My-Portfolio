@@ -13,6 +13,7 @@ h1 {
 }
 
 button {
+  white-space: nowrap;
   margin-top: 10px;
   padding: 10px 20px;
   background-color: #70E61C;
@@ -20,7 +21,6 @@ button {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  width: 20%;
   font-size: clamp(1.125rem, 1.0427631579rem + .4111842105vw, 1.4375rem);
 
   &:hover {

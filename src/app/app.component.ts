@@ -12,7 +12,6 @@ import { HeroComponent } from './main-content/hero/hero.component';
 import { PortfolioComponent } from './main-content/portfolio/portfolio.component';
 import { ReferencesComponent } from './main-content/references/references.component';
 import { SkillsComponent } from './main-content/skills/skills.component';
-
 @Component({
   selector: 'app-root',
   standalone: true,
