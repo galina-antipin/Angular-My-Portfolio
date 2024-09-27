@@ -6,7 +6,10 @@ section {
     display: flex;
     flex-direction: column;
     height: 100vh;
-
+    background-image: url(./../../../assets/img/purple-shadow.png), url(./../../../assets/img/green-shadow.png);
+    background-position: left -20% top 80%, left 160% top 99%;;
+    background-size: 50%;
+    background-repeat: no-repeat, no-repeat;
 }
 
 .hero-wrapper {
