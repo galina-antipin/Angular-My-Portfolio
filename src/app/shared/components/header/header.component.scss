@@ -34,22 +34,22 @@ nav {
         font-size: 23px;
 
         &::after {
-            content: ""; 
+            content: "";
             position: absolute;
-            left: 50%; 
-            bottom: -5px; 
-            width: 0; 
-            height: 2px; 
-            background-color:  #9747FF;
-            transition: width 0.4s ease, left 0.4s ease; 
+            left: 50%;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: #9747FF;
+            transition: width 0.4s ease, left 0.4s ease;
         }
 
         &:hover {
-            color: #70E61C; 
+            color: #70E61C;
 
             &::after {
                 width: 100%;
-                left: 0; 
+                left: 0;
             }
         }
     }
@@ -65,4 +65,52 @@ nav {
             transform: scale(1.2);
         }
     }
+}
+
+.clr-toggle-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid #9747FF;
+    border-radius: 20px;
+    width: 80px;
+    height: 36px;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover{
+        border: 2px solid #70E61C;
+    }
+}
+
+.clr-toggle {
+    display: none;
+}
+
+.option {
+    flex: 1;
+    color:#70E61C;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    cursor: pointer;
+
+    &:hover {
+        color:#70E61C;
+    }
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(151, 71, 255, 0.7);
+    transition: left 0.3s ease;
+    border-radius: 20px;
+}
+
+.clr-toggle:checked~.slider {
+    left: 50%;
 }
