@@ -2,7 +2,6 @@ section {
     max-width: 1920px;
     display: flex;
     flex-direction: column;
-    width: 100%;
     margin-right: 8%;
     margin-left: 8%;
     scroll-margin-top: 250px;
@@ -14,7 +13,7 @@ span {
 
 .portfolio-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
     margin-top: 5%;
 }
@@ -27,7 +26,8 @@ span {
 .left-content {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 50%;
+    align-items: flex-start;
 
     p {
         color: #9747FF;
@@ -50,9 +50,9 @@ h3 {
 }
 
 .button-section {
-    width: 30%;
+    width: 40%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .right-content {
@@ -64,5 +64,8 @@ h3 {
         transform: scale(1.05);
         cursor: pointer;
     }
+}
 
+.space-between-buttons {
+    padding: 20px;
 }
