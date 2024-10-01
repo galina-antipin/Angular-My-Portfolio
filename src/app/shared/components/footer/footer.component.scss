@@ -1,0 +1,32 @@
+* {
+    color: white;
+}
+
+footer {
+    border-top: 2px solid #70e61c !important;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 2%;
+    height: 100px;
+}
+
+.footer-content {
+    max-width: 1920px;
+    margin-left: 8%;
+    margin-right: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.footer-right img {
+    margin-left: 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}

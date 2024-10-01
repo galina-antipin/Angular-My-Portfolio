@@ -4,11 +4,11 @@
         <h1>Contact</h1>
     </div>
     <div class="contact-wrapper">
-        <div class="left-content">
+        <div class="left-content" data-aos="fade-right">
             <p>If you have any questions, want to share some thoughts, or want to team up
                 on a project - feel free to <b>drop me a message!</b></p>
         </div>
-        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" data-aos="fade-left">
             <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text" id="name"
                 placeholder="Your name" required [ngClass]="{'invalid': !name.valid && name.touched}">
             @if (!name.valid && name.touched) {
@@ -26,6 +26,13 @@
             @if (!message.valid && message.touched) {
             <span>Please enter a message</span>
             }
+
+            <!-- <div class="checkbox-wrapper">
+                <input type="checkbox" id="privacy" [(ngModel)]="contactData.acceptPolicy" name="privacy" required />
+                <label for="privacy">I've read the <a href="#privacy-policy" target="_blank">privacy policy</a> and agree to the processing of my data as outlined.</label>
+                <span *ngIf="contactForm.submitted && !acceptPolicy" class="error">Bitte akzeptiere die Datenschutzerklärung</span>
+            </div> -->
+        
             <button type="submit">Send message :)</button>
         </form>
     </div>
