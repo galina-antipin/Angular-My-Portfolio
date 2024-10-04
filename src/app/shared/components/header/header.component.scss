@@ -9,6 +9,10 @@ header {
     height: 100px;
     z-index: 1;
     background-color: #141D2F;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 section {
@@ -79,7 +83,7 @@ nav {
     overflow: hidden;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
         border: 2px solid #70E61C;
     }
 }
@@ -90,14 +94,14 @@ nav {
 
 .option {
     flex: 1;
-    color:#70E61C;
+    color: #70E61C;
     text-align: center;
     line-height: 36px;
     font-size: 14px;
     cursor: pointer;
 
     &:hover {
-        color:#70E61C;
+        color: #70E61C;
     }
 }
 
