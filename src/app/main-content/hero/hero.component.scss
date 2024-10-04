@@ -36,10 +36,10 @@ section {
 }
 
 .middle-content {
-    display: flex;
-    font-size: clamp(4.6rem, .6343430034rem + 3.3105802048vw, 3.8125rem);
 
     span {
+        display: flex;
+        font-size: 4vw;
         transform: rotate(-90deg);
         color: white;
         display: inline-block;
@@ -47,19 +47,20 @@ section {
 }
 
 .name-style {
-    font-size: clamp(5.875rem, .4432593857rem + 4.0955631399vw, 4.375rem);
+    font-size: 4vw;
     font-weight: 700;
     color: white;
     width: 100%;
-    white-space: nowrap;
+    flex: 1;
 }
 
 .front-end {
-    font-size: clamp(2rem, .1761945392rem + 3.0716723549vw, 3.125rem);
+    font-size: 3vw;
     color: #9747FF;
     width: 100%;
-    white-space: nowrap;
     margin-bottom: 1%;
+    flex: 1;
+    text-align: center;
 }
 
 .text-content {
@@ -68,24 +69,3 @@ section {
     align-items: center;
 }
 
-.left-line-container {
-    display: flex;
-    align-items: center;
-    gap: 1%;
-    width: 100%;
-
-    img {
-        transition: transform 0.3s;
-        cursor: pointer;
-
-        &:hover {
-            transform: scale(1.2);
-        }
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
-        font-size: 23px;
-    }
-}
