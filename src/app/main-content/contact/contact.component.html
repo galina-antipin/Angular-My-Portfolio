@@ -27,14 +27,16 @@
             <span>Please enter a message</span>
             }
 
-            <!-- <div class="checkbox-wrapper">
-                <input type="checkbox" id="privacy" [(ngModel)]="contactData.acceptPolicy" name="privacy" required />
-                <label for="privacy">I've read the <a href="#privacy-policy" target="_blank">privacy policy</a> and agree to the processing of my data as outlined.</label>
-                <span *ngIf="contactForm.submitted && !acceptPolicy" class="error">Bitte akzeptiere die Datenschutzerklärung</span>
-            </div> -->
-        
-            <button type="submit">Send message :)</button>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" [(ngModel)]="contactData.acceptPolicy" name="privacy" required />
+                <label for="privacy">I've read the <a routerLink="privacy-policy">privacy policy</a> and agree to the
+                    processing of my data as outlined.</label>
+            </div>
+
+            <span class="error">Please accept the privacy policy.</span>
+            <button class="send-button" type="submit" [ngClass]="{'active': !message.valid && message.touched}">Send message :)</button>
         </form>
     </div>
-    <div class="go-back-arrow"> <a href="#hero"> <img src="./../../../assets/img/arrow-top-icon.svg" alt="Arrow top"> </a></div>
+    <div class="go-back-arrow"> <a href="#hero"> <img src="./../../../assets/img/arrow-top-icon.svg" alt="Arrow top">
+        </a></div>
 </section>

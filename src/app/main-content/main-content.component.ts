@@ -7,11 +7,12 @@ import { ReferencesComponent } from './references/references.component';
 import { ContactComponent } from './contact/contact.component';
 import { ImprintComponent } from '../imprint/imprint.component';
 import { RouterOutlet } from '@angular/router';
+import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
 
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [HeroComponent, AboutMeComponent, SkillsComponent, PortfolioComponent, ReferencesComponent, ContactComponent, ImprintComponent, RouterOutlet],
+  imports: [HeroComponent, AboutMeComponent, SkillsComponent, PortfolioComponent, ReferencesComponent, ContactComponent, PrivacyPolicyComponent ,ImprintComponent, RouterOutlet],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })

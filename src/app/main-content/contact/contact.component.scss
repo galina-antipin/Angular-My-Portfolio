@@ -10,7 +10,6 @@ section {
         height: 39px;
         width: 39px;
         display: flex;
-
     }
 }
 
@@ -28,6 +27,7 @@ section {
 
 span {
     color: red;
+    font-size: 1vw;
 }
 
 p {
@@ -75,7 +75,6 @@ input, textarea {
         background-image: url('./../../../assets/img/warning-icon.png'); 
         background-repeat: no-repeat; 
         background-position: right 10px center;
-        background-size: 16px; 
     }
 
     &:valid {
@@ -96,3 +95,19 @@ input, textarea {
 textarea {
     height: 100px; 
 }
+
+input[type="checkbox"] {
+    border-color: #70e61c;
+    margin-right: 10px;
+    background-color: #141D2F;
+}
+
+label {
+    color: white; 
+}
+
+a{
+    color: #9747FF; 
+    text-decoration: none;
+}
+
